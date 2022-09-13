@@ -1,8 +1,72 @@
-html {
-    font-family: 'Montserrat', sans-serif;
+body {
+    font-family: 'Montserrat';
+   
 }
 
-body {
-    margin: 0;
-    padding: 0;
+
+
+header h3 {
+   font-size: 13px;
+}
+header p {
+    font-size: 9px;
+    letter-spacing: 3px;
+}
+.nav-item {
+    font-weight: 700;
+    font-size: 13px;
+     height:11px;
+     cursor: pointer;
+}
+#shopCart {
+    height: 44px;
+    width: 140px;
+    text-align: center;
+    border: 2px solid #222222;
+    position: relative;
+    font-weight: 700;
+    margin-left: 50px;
+}
+.fa-bag-shopping {
+    color: red;
+}
+
+.circle {
+    width:22px;
+    height:22px;
+    border-radius:50%;
+    background-color:#222222;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight:400;
+    text-align: center;
+    padding: 2px 3px 0 3px;
+    position: absolute;
+    left: 92%;
+    top: 25%;
+}
+.dropdown-menu li {
+    height:20px;
+}
+
+@media (min-width: 992px) {
+    #buttonDropDown {
+        display: none;
+    }
+    header h3 {
+        font-size: 26px;
+     }
+     header p {
+         font-size: 20px;
+         letter-spacing: 9px;
+     }
+}
+@media (max-width: 992px) {
+   #navbarNav {
+    display: none;
+   }
+   #shopCart {
+    display: none;
+ }
+ 
 }
