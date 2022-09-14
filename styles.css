@@ -4,6 +4,7 @@ body {
 }
 
 
+/* Header */
 
 header h3 {
    font-size: 13px;
@@ -12,12 +13,11 @@ header p {
     font-size: 9px;
     letter-spacing: 3px;
 }
-.nav-item {
-    font-weight: 700;
-    font-size: 13px;
-     height:11px;
-     cursor: pointer;
-}
+
+
+
+/* Shopping Cart */
+
 #shopCart {
     height: 44px;
     width: 140px;
@@ -45,6 +45,19 @@ header p {
     left: 92%;
     top: 25%;
 }
+
+.subHeader {
+    background-image: url(./images/Layer_58.png);
+    height:70px;
+    width: 100%;
+    font-weight: 700;
+    color: #222222;
+  }
+.subHeader p {
+    height: 10px;
+    font-size: 7px;
+}
+
 .dropdown-menu li {
     height:20px;
 }
@@ -53,6 +66,50 @@ header p {
     #buttonDropDown {
         display: none;
     }
+    /* Navigation */
+#navbarNav{
+    padding:0;
+}
+
+.link:hover {
+    color: #e24545;
+}
+.link:hover span {
+    position: absolute;
+    top: 0%;
+    left: 5%;
+    right: 0%;
+    margin-top: 1.5rem;
+    background-color: #e24545;
+    width: 10px;
+    height: 3px;
+}
+.link {
+    font-weight: 700;
+    font-size: 13px;
+    height:30px;
+    cursor: pointer;
+    position: relative;
+    color: #444444;
+    text-decoration: none;
+}
+ .active{
+    color: #e24545;
+}
+
+.active span {
+    position: absolute;
+    top: 0%;
+    left: 5%;
+    right: 0%;
+    margin-top: 1.5rem;
+    background-color: #e24545;
+    width: 10px;
+    height: 3px;
+  }
+  
+  
+ 
     header h3 {
         font-size: 26px;
      }
@@ -60,6 +117,13 @@ header p {
          font-size: 20px;
          letter-spacing: 9px;
      }
+     .subHeader {
+        height:150px;
+        font-size: 26px;
+      } 
+      .subHeader p {
+        font-size:12px
+      }  
 }
 @media (max-width: 992px) {
    #navbarNav {
@@ -69,4 +133,10 @@ header p {
     display: none;
  }
  
+}
+
+@media (max-width: 1048px) {
+    #shopCart {
+        display: none;
+     }
 }
