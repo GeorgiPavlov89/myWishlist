@@ -25,7 +25,7 @@ header p {
     border: 2px solid #222222;
     position: relative;
     font-weight: 700;
-    margin-left: 50px;
+    
 }
 .fa-bag-shopping {
     color: red;
@@ -57,11 +57,29 @@ header p {
     height: 10px;
     font-size: 7px;
 }
-
+.subHeader h6 {
+    font-size: 10px;
+}
 .dropdown-menu li {
     height:20px;
 }
 
+/* Form Searchbar */
+
+form button {
+    width:100px;
+    height: 28px;
+    border: 2px solid #444444;
+    background-color: #ffffff;
+    font-weight: 400;
+    font-size: 10px;
+    cursor: pointer;
+}
+form input {
+    width:120px;
+    margin-right: 10px;
+    height: 28px;
+}
 @media (min-width: 992px) {
     #buttonDropDown {
         display: none;
@@ -108,8 +126,12 @@ header p {
     height: 3px;
   }
   
+  .subHeader h6 {
+    font-size: 26px;
+   
+}
   
- 
+
     header h3 {
         font-size: 26px;
      }
@@ -124,6 +146,21 @@ header p {
       .subHeader p {
         font-size:12px
       }  
+      
+      form button {
+        width:120px;
+        height: 38px;
+        border: 2px solid #444444;
+        background-color: #ffffff;
+        font-size: 12px;
+       margin-right: 3rem;
+    }
+    form input {
+        width:220px;
+        margin-right: 10px;
+        height: 38px;
+        border-radius: 3px;
+    }
 }
 @media (max-width: 992px) {
    #navbarNav {

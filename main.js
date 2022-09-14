@@ -5,13 +5,25 @@ const underlines = document.querySelectorAll('.underLine');
     link.addEventListener('click', (e) => {
       links.forEach((link) => {
           link.classList.remove('active');
-          underlines.forEach((underline) => {
-            underline.classList.remove('underLine');
-          })
+          
       });
       e.preventDefault();
       link.classList.add('active');
-      underline.classList.add('underLine')
+      
     });
   });
+
+const clearButton = document.getElementById('clearButton')
+document.getElementById('searchBar').addEventListener('keyup' , (e) => {
+  if (e.target.value.length > 0) {
+    clearButton.disabled = false;
+    clearButton.addEventListener('click', () => {
+      document.getElementById('searchBar').value = ''
+      clearButton .disabled = true;
+    })
+  } else {
+    clearButton .disabled = true;
+  }
+})
+
 
