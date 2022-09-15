@@ -1,5 +1,7 @@
+
+/* Navigation Links */
 const links = document.querySelectorAll('.link');
-const underlines = document.querySelectorAll('.underLine');
+
 
   links.forEach((link) => {
     link.addEventListener('click', (e) => {
@@ -13,6 +15,7 @@ const underlines = document.querySelectorAll('.underLine');
     });
   });
 
+  /* Search Bar Clear Button */
 const clearButton = document.getElementById('clearButton')
 document.getElementById('searchBar').addEventListener('keyup' , (e) => {
   if (e.target.value.length > 0) {
@@ -25,5 +28,22 @@ document.getElementById('searchBar').addEventListener('keyup' , (e) => {
     clearButton .disabled = true;
   }
 })
+/* Remove product from list */
+const products = document.querySelectorAll('.card')
+const buttonRemove = document.querySelectorAll('.remove-list-item')
+
+buttonRemove.forEach((button) => {
+  button.addEventListener('click' , (e) => {
+    products.forEach((product) => {
+      if(product.id === e.target.dataset.card) {
+        product.classList.add('removeProduct')
+      }
+    })
+  }
+  )
+}
+)
+
+
 
 

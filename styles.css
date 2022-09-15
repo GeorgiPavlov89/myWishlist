@@ -80,6 +80,70 @@ form input {
     margin-right: 10px;
     height: 28px;
 }
+
+/* Card Styles */
+
+.card {
+    border: 1px solid #eeeeee;
+    background-color: #ffffff;
+    margin-bottom: 4rem;
+}
+.card-title {
+    font-size: 10px;
+    font-weight: 700;
+}
+.card-text {
+    font-size: 10px;
+    font-weight: 700;
+    color: #e24545;
+    letter-spacing: -0.4px;
+}
+.card img {
+    width: 50px;
+    height: 90px;
+}
+.cardButtonsWrapper {
+    right:20%;
+    bottom: -10%;
+}
+.cardButtonsWrapper button {
+    background-color: #ffffff;
+    border: 1px solid #eeeeee;
+    height: 25px;
+}
+/* Remove from List Styles */
+.removeListHover {
+    display: none !important;
+    background-color: #000000;
+    opacity: 0.8;   
+    position: absolute;
+    left: 0;
+    top: 0%;
+    height: 150px;
+}
+ /* Style for "Remove from List button" */
+.removeButton {
+    padding-right: 7px;
+    border: 2px solid #ffffff;
+    background: transparent;
+    font-size: 11px;
+    color: #ffffff;
+}
+.removeProduct {
+    display: none;
+}
+.card:hover .removeListHover {
+    display: flex !important; 
+}
+.card:hover .cardRedLine {
+    visibility:hidden;
+}
+.card:hover .cardButtonsWrapper button {
+    background-color: #e24545;
+}
+.card:hover .cardButtonsWrapper button i {
+    color: #ffffff;
+}
 @media (min-width: 992px) {
     #buttonDropDown {
         display: none;
@@ -125,13 +189,9 @@ form input {
     width: 10px;
     height: 3px;
   }
-  
   .subHeader h6 {
     font-size: 26px;
-   
 }
-  
-
     header h3 {
         font-size: 26px;
      }
@@ -160,6 +220,66 @@ form input {
         margin-right: 10px;
         height: 38px;
         border-radius: 3px;
+    }
+
+    /* Card Styles */
+    .card {
+        border: 1px solid #eeeeee;
+        background-color: #ffffff;
+        margin-bottom: 4rem;
+    }
+    .card-text {
+        font-size:16px;
+    }
+    .card-title {
+        font-size: 14px;
+    }
+    .card img {
+        width: 101px;
+        height: 190px;
+    }
+    .cardButtonsWrapper {
+        position: absolute;
+        right:38%;
+        bottom:0%;
+    }
+    .cardButtonsWrapper button {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        height: 40px;
+        width: 40px;
+    }
+    .cardRedLine{
+        height:40px;
+        width: 10px;
+        height: 2px;
+        background-color: #e24545;
+    }
+    .removeListHover {
+        display: none !important;
+        width: 251px;
+        height: 270px;
+        background-color: #000000;
+        opacity: 0.8;   
+        position: absolute;
+        left: 0;
+        top: 0%;
+    }
+    .card:hover .removeListHover {
+        display: flex !important; 
+    }
+    .card:hover .cardRedLine {
+        visibility:hidden;
+    }
+     /* Style for "Remove from List button" */
+    .removeButton {
+        width: 170px;
+        height: 40px;
+        border: 2px solid #ffffff;
+        background: transparent;
+        font-size: 12px;
+        color: #ffffff;
     }
 }
 @media (max-width: 992px) {
